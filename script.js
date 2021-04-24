@@ -61,3 +61,13 @@ var options = {
     loop:false
 }
 var typed = new Typed(".typer", options);
+let translate = ["Hi.","नमस्ते.","こんにちは","Привет.","ഹായ്.","வணக்கம்.","أهلا.",".היי","Hi."]
+var reg = new Typed("#words",{
+    strings: translate,
+    typeSpeed: 20,
+    backSpeed: 40,
+    backDelay: 1000,
+    startDelay: 1000,
+    fadeOut: true,
+    loop:false
+})
