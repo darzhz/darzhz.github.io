@@ -201,6 +201,7 @@ transition: all 0.5s ease-in-out;
   opacity: 1;
   transition: all 0.5s ease-in-out;
   box-shadow: inset 11px 0px 20px 3px var(--primary);
+  padding: 0;
 }
 .about.oper li{
 display: inline;
@@ -281,7 +282,7 @@ margin-top: 10vh;
     }
     .about.oper{
       width: 36vw;
-      left: 63vw;
+      left: 64vw;
     }
     #bio {
       font-size: 1.3vw;
