@@ -9,6 +9,8 @@ hamburger.addEventListener('click',()=>{
     menu.classList.toggle('oper');
     line.classList.toggle('rot')
 })
+const im = ["one","two","three","four"]
+const imageBox = $.querySelector('.image_slider');
 let y;
 me.addEventListener('click',()=>{
     about.classList.toggle('oper');
@@ -31,8 +33,6 @@ me.addEventListener('click',()=>{
         }
 })
 //#endregion
-const im = ["one","two","three","four"]
-const imageBox = $.querySelector('.image_slider');
 // imageBox.addEventListener('click', ()=>{
    
 // })
@@ -50,8 +50,9 @@ const imageBox = $.querySelector('.image_slider');
 //         }, 5000);
 //         return y 
 //     }
-let wordz = ["i'm darsh!","i'm a &#60;webdeveloper&#47;&#62;","i'm a designer","i'm a designer...sortof","i wanna make some cool stuff","i'm darsh!"]
-var options = {
+let wordz = ["i'm darsh!","i'm a &#60;webdeveloper&#47;&#62;","i'm a designer","i'm a designer...sortof","i wanna make some cool stuff","i'm darsh!"];
+let translate = ["Hi.","नमस्ते.","こんにちは","Привет.","ഹായ്.","வணக்கம்.","أهلا.",".היי","Hi."];
+let options = {
     strings: wordz,
     typeSpeed: 30,
     backSpeed: 40,
@@ -60,9 +61,7 @@ var options = {
     fadeOut: false,
     loop:false
 }
-var typed = new Typed(".typer", options);
-let translate = ["Hi.","नमस्ते.","こんにちは","Привет.","ഹായ്.","வணக்கம்.","أهلا.",".היי","Hi."]
-var reg = new Typed("#words",{
+let options2 = {
     strings: translate,
     typeSpeed: 20,
     backSpeed: 40,
@@ -70,4 +69,8 @@ var reg = new Typed("#words",{
     startDelay: 1000,
     fadeOut: true,
     loop:false
-})
+}
+window.onload = (event) => {
+let typed = new Typed(".typer", options);
+let reg = new Typed("#words",options2);
+}
