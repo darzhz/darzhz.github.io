@@ -17,9 +17,11 @@
   body {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    height: calc(var(--vh, 1vh)*100);
   }
 #bigboi {
-    height: 90vh;
+    height: 90%;
     width: 100%;
     background-color: var(--primary);
     margin: 0;
@@ -45,7 +47,7 @@
   margin: 0;
   padding: 0;
   background-color: var(--secondary);
-  height: 10vh;
+  height: 10%;
   position: relative;
   font-family: ostwald;
   font-size: 5.5vw;
@@ -259,7 +261,15 @@ margin-top: 10vh;
 #bio {
   font-size: 2.3vw;
   font-family: poppins_light;
-
+}
+#badges{
+  font-family: poppins_light;
+  font-size: 2.3vw;
+  padding: 0;
+  margin: 0;
+}
+#badges i{
+  font-size: 5vh;
 }
 #media a{
   margin: 0;
@@ -291,5 +301,11 @@ ul#media {
       font-size: 1.3vw;
       font-family: poppins_light;
     
+    }
+    #badges {
+      font-size: 2vh;
+    }
+    #media a{
+      font-size: 4vh;
     }
 }

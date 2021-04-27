@@ -33,23 +33,6 @@ me.addEventListener('click',()=>{
         }
 })
 //#endregion
-// imageBox.addEventListener('click', ()=>{
-   
-// })
-// function slideShow(){
-//     let x= 0
-//    let y = setInterval(() => {
-//             if(x>=im.length-1){
-//                 imageBox.classList.toggle(im[x-1])
-//                 x=0;
-//              imageBox.classList.toggle(im[x])
-//             }
-//             imageBox.classList.toggle(im[x-1])
-//             imageBox.classList.toggle(im[x])
-//             x++
-//         }, 5000);
-//         return y 
-//     }
 let wordz = ["i'm darsh!","i'm a &#60;webdeveloper&#47;&#62;","i'm a designer","i'm a designer...sortof","i wanna make some cool stuff","i'm darsh!"];
 let translate = ["Hi.","नमस्ते.","こんにちは","Привет.","ഹായ്.","வணக்கம்.","أهلا.",".היי","Hi."];
 let options = {
@@ -74,3 +57,9 @@ window.onload = (event) => {
 let typed = new Typed(".typer", options);
 let reg = new Typed("#words",options2);
 }
+let view = window.innerHeight * 0.01;
+document.body.style.setProperty('--vh',`${view}px`);
+window.addEventListener('resize',()=>{
+    view = window.innerHeight * 0.01;
+    document.body.style.setProperty('--vh',`${view}px`);
+})
