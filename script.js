@@ -34,7 +34,7 @@ me.addEventListener('click',()=>{
 })
 //#endregion
 let wordz = ["i'm darsh!","i'm a &#60;webdeveloper&#47;&#62;","i'm a designer","i'm a designer...sortof","i wanna make some cool stuff","i'm darsh!"];
-let translate = ["Hi.","नमस्ते.","こんにちは","Привет.","ഹായ്.","வணக்கம்","أهلا.",".היי","Hi."];
+let translate = ["Hi.","नमस्ते.","こんにちは","Привет.","ഹായ്.","أهلا.",".היי","Hi."];
 let options = {
     strings: wordz,
     typeSpeed: 30,
