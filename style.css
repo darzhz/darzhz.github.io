@@ -48,7 +48,7 @@
   padding: 0;
   background-color: var(--secondary);
   height: 10%;
-  position: relative;
+  position: inherit;
   font-family: ostwald;
   font-size: 5.5vw;
   z-index:10;
