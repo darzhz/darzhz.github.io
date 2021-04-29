@@ -56,7 +56,7 @@ let options2 = {
 window.onload = (event) => {
 let typed = new Typed(".typer", options);
 let reg = new Typed("#words",options2);
-//i know i used a liberary for animation, i'm lazy..sue me..
+//i know i used a liberary for animations, i'm lazy..sue me..
 particlesJS.load('bigboi', '/support/lib/particle.json', function() {
     console.log('callback - particles.js config loaded');
   });
