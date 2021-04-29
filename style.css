@@ -51,6 +51,7 @@
   position: relative;
   font-family: ostwald;
   font-size: 5.5vw;
+  z-index:10;
 }
 #lilboi h5{
   margin: 0;
@@ -278,6 +279,11 @@ margin-top: 10vh;
 }
 ul#media {
   padding: 0;
+}
+.particles-js-canvas-el{
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 @media only screen and (min-width: 756px) {
     #bigboi {

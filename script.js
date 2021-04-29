@@ -56,6 +56,10 @@ let options2 = {
 window.onload = (event) => {
 let typed = new Typed(".typer", options);
 let reg = new Typed("#words",options2);
+//i know i used a liberary for animation, i'm lazy..sue me..
+particlesJS.load('bigboi', '/support/lib/particle.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 }
 let view = window.innerHeight * 0.01;
 document.body.style.setProperty('--vh',`${view}px`);
