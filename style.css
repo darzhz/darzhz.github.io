@@ -179,7 +179,7 @@
   position: fixed;
   height: 100vh;
   z-index: 12;
-  background-color: rgba(59, 59, 56, 0.92);
+  background-color: rgba(31, 30, 29, 0.842);
   /* display: flex; */
   left: 100vw;
   width: 0;
@@ -203,7 +203,7 @@ transition: all 0.5s ease-in-out;
   width: 50vw;
   opacity: 1;
   transition: all 0.5s ease-in-out;
-  box-shadow: inset 11px 0px 20px 3px var(--primary);
+  box-shadow: 10px 0px 20px 3px #000;
   padding: 0;
 }
 .about.oper li{
