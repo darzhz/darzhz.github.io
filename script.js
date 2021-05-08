@@ -56,8 +56,14 @@ let options2 = {
 window.onload = (event) => {
 let typed = new Typed(".typer", options);
 let reg = new Typed("#words",options2);
+let fileName;
+if(innerWidth > 500){
+    fileName = "particle.json";
+}else{
+    fileName = "particleMobile.json"
+}
 //i know i used a liberary for animations, i'm lazy..sue me..
-particlesJS.load('bigboi', '/support/lib/particle.json', function() {
+particlesJS.load('bigboi', `/support/lib/${fileName}`, function() {
     console.log('callback - particles.js config loaded');
   });
 }
