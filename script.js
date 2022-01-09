@@ -9,8 +9,7 @@ hamburger.addEventListener('click',()=>{
     menu.classList.toggle('oper');
     line.classList.toggle('rot')
 })
-const im = ["one","two","three","four"]
-const imageBox = $.querySelector('.image_slider');
+const imageBox = $.querySelector('.image_slider').children;
 let y;
 me.addEventListener('click',()=>{
     about.classList.toggle('oper');
@@ -21,16 +20,24 @@ me.addEventListener('click',()=>{
         y = undefined;
     }else{
      y = setInterval(() => {
-             if(x>=im.length-1){
-                 imageBox.classList.toggle(im[x-1])
-                 x=0;
-              imageBox.classList.toggle(im[x])
+        if(x> imageBox.length - 1){
+                imageBox[x - 1].style.opacity = "0";
+                imageBox[x - 1].style.display = "none";
+                x = 0;
+                imageBox[x].style.display = "block";
+                imageBox[x].style.opacity = "1";
              }
-             imageBox.classList.toggle(im[x-1])
-             imageBox.classList.toggle(im[x])
-             x++
+             if(imageBox[x-1]){
+             imageBox[x-1].style.opacity = "0";
+            imageBox[x-1].style.display = "none";
+         }
+ 
+            imageBox[x].style.display = "block";
+             imageBox[x].style.opacity = "1";
+             x++;
+             //console.log(x);
          }, 3500);
-        }
+       }
 })
 //#endregion
 let wordz = ["i'm darsh!","i'm a &#60;webdeveloper&#47;&#62;","i'm a designer","i'm a designer...sortof","i wanna make some cool stuff","i'm darsh!"];
@@ -63,7 +70,7 @@ if(innerWidth > 500){
     fileName = "particleMobile.json"
 }
 //i know i used a liberary for animations, i'm lazy..sue me..
-particlesJS.load('bigboi', `/support/lib/${fileName}`, function() {
+particlesJS.load('bigboi', `./support/lib/${fileName}`, function() {
     console.log('callback - particles.js config loaded');
   });
 }
